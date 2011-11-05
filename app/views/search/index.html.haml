@@ -1,0 +1,16 @@
+%h1 Search
+
+#search_form
+  = form_tag search_index_path, :method => :get do
+    %p
+      Member name:
+      = text_field_tag :q, params[:q], :id => 'search_box'
+      = submit_tag "Search", :id => 'search'
+
+#results
+  .member
+    %h2 Member
+    %p Alice
+    %h3 Committees
+    %ul
+      %li Internet Committee
