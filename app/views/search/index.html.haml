@@ -14,6 +14,10 @@
         %h2= member.name
         %h3 Committees
         %ul
-          - member.organizations.each do |organization|
+          - member.committees.each do |organization|
+            %li= organization.name
+        %h3 Groups
+        %ul
+          - member.groups.each do |organization|
             %li= organization.name
         %hr
