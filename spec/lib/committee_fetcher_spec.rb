@@ -3,7 +3,7 @@ WebMock.disable_net_connect!
 
 require 'committee_fetcher'
 
-describe CommitteeFetcher, ".fetch" do
+describe Parliament::CommitteeFetcher, ".fetch" do
   let(:site) { 'data.parliament.uk' }
   let(:path) { '/resources/members/api/committees' }
   let(:url) { "http://#{site}#{path}" }
@@ -25,13 +25,13 @@ XML
 
   it "retrieves the committee xml from the parliament.gov api" do
     stub_request(:get, url).to_return(:body => xml)
-    CommitteeFetcher.fetch
+    Parliament::CommitteeFetcher.fetch
     a_request(:get, url).should have_been_made
   end
 
   it "parses the committee xml and creates a Committee object for each" do
     stub_request(:get, url).to_return(:body => xml)
-    committees = CommitteeFetcher.fetch
+    committees = Parliament::CommitteeFetcher.fetch
     committees.size.should == 2
     committees[0].id.should == '8'
     committees[0].name.should == 'Business, Enterprise and Regulatory Reform'
@@ -39,7 +39,7 @@ XML
   end
 end
 
-describe Committee do
+describe Parliament::Committee do
   let(:xml) { Nokogiri.XML(<<-XML
 <committees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:c="urn:parliament/metadata/core/2010/10/01/committee">
 <c:committee id="19">
@@ -51,7 +51,7 @@ describe Committee do
 XML
                           ).xpath('//c:committee').first}
 
-  let(:committee) { Committee.new(xml) }
+  let(:committee) { Parliament::Committee.new(xml) }
   let(:site) { 'data.parliament.uk' }
   let(:path) { '/resources/members/api/committees/Constitutional%20Affairs/19/' }
   let(:url) { "http://#{site}#{path}" }
@@ -116,7 +116,7 @@ XML
 <m:firstName>Patrick</m:firstName>
 <m:lastName>Wright</m:lastName>
 <m:shortTitle/>
-<m:longTitle/>
+<m:longTitle>Test Long Title</m:longTitle>
 <g:gender id="1">Male</g:gender>
 <p:party id="6">
 <p:partyName>Crossbench</p:partyName>
@@ -136,8 +136,8 @@ XML
     before do
       stub_request(:get, url + 'members/lords').to_return(:body => lords_xml)
       stub_request(:get, url + 'members/commons').to_return(:body => commons_xml)
-      MemberFetcher.stub(:fetch_all).and_return({
-        '227' => Member.new('227', "Test Person")
+      Parliament::MemberFetcher.stub(:fetch_all).and_return({
+        '227' => Parliament::Member.new('227', "Test Person")
       })
       stub_request(:get, "http://#{site}/resources/members/api/committees/Constitutional%20Affairs/19/").to_return(:body => committee_xml)
     end
@@ -152,7 +152,7 @@ XML
       members = committee.members
       members.size.should == 2
       members[0].id.should == '1767'
-      members[0].name.should == "Lord Patrick Wright"
+      members[0].name.should == "Lord Patrick Wright (Test Long Title)"
       members[1].id.should == '227'
       members[1].name.should == "Test Person"
     end
