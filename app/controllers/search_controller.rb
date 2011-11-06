@@ -3,7 +3,7 @@ class SearchController < ApplicationController
     if params[:q].blank?
       @members = []
     else
-      @members = Member.where("name like ?", "%#{params[:q]}%")
+      @members = Member.where("lower(name) like ?", "%#{params[:q].downcase}%")
     end
   end
 end
