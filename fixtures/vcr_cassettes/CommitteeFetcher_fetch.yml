@@ -1,0 +1,407 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://data.parliament.uk:80/resources/members/api/committees
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private
+      content-length:
+      - '43715'
+      content-type:
+      - application/xml; charset=utf-8
+      server:
+      - Microsoft-IIS/7.5
+      x-aspnet-version:
+      - 2.0.50727
+      x-powered-by:
+      - ASP.NET
+      date:
+      - Sat, 05 Nov 2011 17:10:42 GMT
+      proxy-connection:
+      - keep-alive
+      keep-alive:
+      - '60'
+    body: ! '<?xml version="1.0" encoding="utf-8"?><committees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:c="urn:parliament/metadata/core/2010/10/01/committee"><c:committee
+      id="4"><c:committeeName>Agriculture</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="7"><c:committeeName>Business and Enterprise Committee</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="8"><c:committeeName>Business, Enterprise and Regulatory Reform</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="9"><c:committeeName>Business, Innovation and Skills</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="12"><c:committeeName>Children, Schools and Families</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="13"><c:committeeName>Committee on Issue of Privilege (Police Searches on
+      Parliamentary Estate)</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="14"><c:committeeName>Committee on Reform of the House of Commons</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="16"><c:committeeName>Commons Science and Technology</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="17"><c:committeeName>Communities and Local Government</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="19"><c:committeeName>Constitutional Affairs</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="23"><c:committeeName>Culture, Media &amp; Sport</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="24"><c:committeeName>Defence</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="42"><c:committeeName>Education</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="43"><c:committeeName>Education &amp; Employment</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="46"><c:committeeName>Education &amp; Skills</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="47"><c:committeeName>Education, Science &amp; Arts</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="48"><c:committeeName>Employment</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="49"><c:committeeName>Energy</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="50"><c:committeeName>Energy and Climate Change</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="51"><c:committeeName>Environment</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="52"><c:committeeName>Environment, Food and Rural Affairs</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="59"><c:committeeName>Environment, Transport &amp; Regional Affairs</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="62"><c:committeeName>Environmental Audit</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="70"><c:committeeName>Expenditure</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="78"><c:committeeName>Foreign Affairs</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="81"><c:committeeName>Health</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="83"><c:committeeName>Home Affairs</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="98"><c:committeeName>International Development</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="95"><c:committeeName>Innovation, Universities and Skills</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="96"><c:committeeName>Innovation, Universities, Science and Skills Committee</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="102"><c:committeeName>Justice</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="112"><c:committeeName>Nationalised Industries</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="110"><c:committeeName>National Heritage</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="123"><c:committeeName>Overseas Development</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="127"><c:committeeName>Public Accounts</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="128"><c:committeeName>Public Administration</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="129"><c:committeeName>Public Service</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="130"><c:committeeName>Race Relations &amp; Immigration</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="120"><c:committeeName>Northern Ireland Affairs</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="121"><c:committeeName>Office of the Deputy Prime Minister: Housing, Planning,
+      Local Government and the Regions Committee</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="132"><c:committeeName>Science &amp; Technology: General Purposes Sub-Committee</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="138"><c:committeeName>Social Security</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="139"><c:committeeName>Social Services</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="135"><c:committeeName>Science and Technology</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="136"><c:committeeName>Scottish Affairs</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="152"><c:committeeName>Trade &amp; Industry</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="153"><c:committeeName>Transport</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="155"><c:committeeName>Transport, Local Government &amp; The Regions</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="158"><c:committeeName>Treasury</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="159"><c:committeeName>Treasury &amp; Civil Service</c:committeeName><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="162"><c:committeeName>Welsh Affairs</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="164"><c:committeeName>Work and Pensions</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="203"><c:committeeName>Education</c:committeeName><c:subCommittee/><c:committeeType>Departmental</c:committeeType></c:committee><c:committee
+      id="204"><c:committeeName>Information</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="219"><c:committeeName>Library and Computers Sub-Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="220"><c:committeeName>Offices Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="229"><c:committeeName>Finance and Staff Sub-Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="231"><c:committeeName>House-Ad Hoc on SSRB Implementation</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="184"><c:committeeName>House Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="189"><c:committeeName>Privileges and Conduct, Committee for</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="190"><c:committeeName>Privileges and Conduct, Sub-Committee on Lords’ Conduct</c:committeeName><c:subCommittee>Sub-Committee
+      on Lords'' Conduct</c:subCommittee><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="191"><c:committeeName>Procedure Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="192"><c:committeeName>Refreshment Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="196"><c:committeeName>Joint Committee on Security</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="197"><c:committeeName>Selection, Committee of</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="187"><c:committeeName>Liaison Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="201"><c:committeeName>Works of Art</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="202"><c:committeeName>Backbench Business</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="206"><c:committeeName>Accommodation Steering Group</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="151"><c:committeeName>Televising of Proceedings of the House</c:committeeName><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="166"><c:committeeName>Administration and Works Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="167"><c:committeeName>Freedom of Information Advisory Panel</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="168"><c:committeeName>Works of Art Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="169"><c:committeeName>Audit Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="140"><c:committeeName>Sound Broadcasting</c:committeeName><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="106"><c:committeeName>Members'' Allowances</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="77"><c:committeeName>Finance &amp; Services</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="94"><c:committeeName>Information Committee</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="86"><c:committeeName>House of Commons (Services)</c:committeeName><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="6"><c:committeeName>Broadcasting</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="10"><c:committeeName>Catering</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="1"><c:committeeName>Accomodation &amp; Works</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="2"><c:committeeName>Administration</c:committeeName><c:subCommittee/><c:committeeType>Domestic</c:committeeType></c:committee><c:committee
+      id="20"><c:committeeName>Conventions (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="18"><c:committeeName>Consolidation
+      etc. Bills (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="26"><c:committeeName>Draft
+      Charities Bill (Joint Committee)</c:committeeName><c:committeeType>Joint Committee</c:committeeType></c:committee><c:committee
+      id="27"><c:committeeName>Draft Children (Contact) and Adoption Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="28"><c:committeeName>Draft
+      Civil Contingencies Bill (Joint Committee)</c:committeeName><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="29"><c:committeeName>Draft
+      Climate Change Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="30"><c:committeeName>Draft
+      Constitutional Renewal Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="31"><c:committeeName>Draft
+      Corruption Bill (Joint Committee)</c:committeeName><c:committeeType>Joint Committee</c:committeeType></c:committee><c:committee
+      id="32"><c:committeeName>Draft Disability Discrimination Bill (Joint Committee)</c:committeeName><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="33"><c:committeeName>Draft
+      Gambling Bill (Joint Committee)</c:committeeName><c:committeeType>Joint Committee</c:committeeType></c:committee><c:committee
+      id="34"><c:committeeName>Draft Human Tissue and Embryos Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="35"><c:committeeName>Draft
+      Legal Services Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="36"><c:committeeName>Draft
+      Marine Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="37"><c:committeeName>Draft
+      Mental Health Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="38"><c:committeeName>Draft
+      Mental Incapacity Bill (Joint Committee)</c:committeeName><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="92"><c:committeeName>House
+      of Lords Reform (Joint Committee)</c:committeeName><c:committeeType>Joint Committee</c:committeeType></c:committee><c:committee
+      id="93"><c:committeeName>Human Rights (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="99"><c:committeeName>Joint
+      Committee on Parliamentary Privilege</c:committeeName><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="100"><c:committeeName>Joint
+      Committee on Private Bill Procedure</c:committeeName><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="111"><c:committeeName>National
+      Security Strategy (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="148"><c:committeeName>Statutory
+      Instruments (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="150"><c:committeeName>Tax
+      Law Rewrite Bills (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="232"><c:committeeName>Joint
+      Committee Northern By-Pass (Stoke on Trent)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="233"><c:committeeName>Joint
+      Committee on Draft Bribery Bill</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="234"><c:committeeName>Joint
+      Committee on Financial Services and Markets</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="235"><c:committeeName>Joint
+      Committee on the Draft Communications Bill</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="225"><c:committeeName>Draft
+      Detention of Terrorist Suspects (Temporary Extension) Bills (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="215"><c:committeeName>Draft
+      Defamation Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="248"><c:committeeName>Draft
+      House of Lords Reform Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="249"><c:committeeName>Privacy
+      and Injunctions (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="250"><c:committeeName>Draft
+      Financial Services Bill (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Joint
+      Committee</c:committeeType></c:committee><c:committee id="242"><c:committeeName>Committee
+      on the City of Westminster</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="252"><c:committeeName>Consumer
+      Insurance (Disclosure and Representations) Bill [HL]</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="254"><c:committeeName>Private
+      Bills Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="216"><c:committeeName>Leicester,
+      Liverpool and Maidstone Councils Bill Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="210"><c:committeeName>Bournemouth
+      &amp; Manchester Councils Bills Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="211"><c:committeeName>Committee
+      on London Local Authorities Bill</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="213"><c:committeeName>Constitutional
+      Reform Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="214"><c:committeeName>Finance
+      Bill 2006-07 Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="221"><c:committeeName>London
+      Local Authorites and Transport for London</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="222"><c:committeeName>Perpetuities
+      and Accumulations Bill Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="223"><c:committeeName>West
+      Northamptonshire Development Bill Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="224"><c:committeeName>Broads
+      Authority Bill</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="230"><c:committeeName>Finance
+      Bill Sub-Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="227"><c:committeeName>City
+      of London (Ward Elections) Bill</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="238"><c:committeeName>Committee
+      on Mersey Tunnels Bill</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="244"><c:committeeName>Draft
+      Freedom of Information Bill</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="245"><c:committeeName>Third
+      Parties (Rights Against Insurers) Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="246"><c:committeeName>Transport
+      for London Bill </c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="188"><c:committeeName>Merits
+      of Statutory Instruments Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="198"><c:committeeName>Standing
+      Orders (Private Bills) Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="199"><c:committeeName>Joint
+      Committee on Tax Law Rewrite Bills</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="186"><c:committeeName>Hybrid
+      Instruments Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="171"><c:committeeName>Consolidation
+      Bills (Joint Committee)</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="172"><c:committeeName>Constitution
+      Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative Committee</c:committeeType></c:committee><c:committee
+      id="173"><c:committeeName>Delegated Powers and Regulatory Reform Committee</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="101"><c:committeeName>Joint
+      Committee on Statutory Instruments</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="22"><c:committeeName>Crossrail
+      Bill</c:committeeName><c:subCommittee/><c:committeeType>Legislative Committee</c:committeeType></c:committee><c:committee
+      id="5"><c:committeeName>Armed Forces Bill</c:committeeName><c:subCommittee/><c:committeeType>Legislative
+      Committee</c:committeeType></c:committee><c:committee id="15"><c:committeeName>Committees
+      on Arms Export Controls (formerly Quadripartite Committee)</c:committeeName><c:subCommittee/><c:committeeType>N/A</c:committeeType></c:committee><c:committee
+      id="3"><c:committeeName>Advisory Committee on Works of Art</c:committeeName><c:subCommittee/><c:committeeType>Other
+      Committee</c:committeeType></c:committee><c:committee id="107"><c:committeeName>Members
+      Estimate</c:committeeName><c:subCommittee/><c:committeeType>Other Committee</c:committeeType></c:committee><c:committee
+      id="143"><c:committeeName>Speaker''s Committee for the Independent Parliamentary
+      Standards Authority</c:committeeName><c:subCommittee/><c:committeeType>Other
+      Committee</c:committeeType></c:committee><c:committee id="144"><c:committeeName>Speaker''s
+      Committee on the Electoral Commission</c:committeeName><c:subCommittee/><c:committeeType>Other
+      Committee</c:committeeType></c:committee><c:committee id="207"><c:committeeName>Public
+      Accounts Commission</c:committeeName><c:subCommittee/><c:committeeType>Other
+      Committee</c:committeeType></c:committee><c:committee id="226"><c:committeeName>Intergovernmental
+      Organisations</c:committeeName><c:subCommittee/><c:committeeType>Other Committee</c:committeeType></c:committee><c:committee
+      id="217"><c:committeeName>Leader''s Group on Members Leaving the House</c:committeeName><c:subCommittee/><c:committeeType>Other
+      Committee</c:committeeType></c:committee><c:committee id="218"><c:committeeName>Lesder''s
+      Group on Review of Working Practices</c:committeeName><c:subCommittee/><c:committeeType>Other
+      Committee</c:committeeType></c:committee><c:committee id="97"><c:committeeName>Intelligence
+      and Security (Cabinet Office)</c:committeeName><c:subCommittee/><c:committeeType>Other
+      Committee (Joint)</c:committeeType></c:committee><c:committee id="41"><c:committeeName>Ecclesiastical
+      Committee</c:committeeName><c:committeeType>Other Committee (Joint)</c:committeeType></c:committee><c:committee
+      id="69"><c:committeeName>European Scrutiny</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="64"><c:committeeName>European Legislation</c:committeeName><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="11"><c:committeeName>Panel of Chairs</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="21"><c:committeeName>Court of Referees</c:committeeName><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="25"><c:committeeName>Deregulation</c:committeeName><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="103"><c:committeeName>Liaison</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="108"><c:committeeName>Members'' Interests</c:committeeName><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="109"><c:committeeName>Modernisation of the House of Commons</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="131"><c:committeeName>Regulatory Reform</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="124"><c:committeeName>Parliamentary Commissioner for Administration</c:committeeName><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="125"><c:committeeName>Privileges</c:committeeName><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="126"><c:committeeName>Procedure</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="145"><c:committeeName>Standards and Privileges</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="146"><c:committeeName>Standards in Public Life</c:committeeName><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="147"><c:committeeName>Standing Orders</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="149"><c:committeeName>Statutory Instruments (Select Committee)</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="137"><c:committeeName>Selection</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="161"><c:committeeName>Unopposed Bills (Panel)</c:committeeName><c:subCommittee/><c:committeeType>Procedural</c:committeeType></c:committee><c:committee
+      id="163"><c:committeeName>West Midlands Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="105"><c:committeeName>London Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="141"><c:committeeName>South East Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="142"><c:committeeName>South West Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="118"><c:committeeName>North East Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="119"><c:committeeName>North West Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="39"><c:committeeName>East Midlands Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="40"><c:committeeName>East of England Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="165"><c:committeeName>Yorkshire and the Humber Regional Select Committee</c:committeeName><c:subCommittee/><c:committeeType>Regional</c:committeeType></c:committee><c:committee
+      id="251"><c:committeeName>Members'' Expenses</c:committeeName><c:subCommittee/><c:committeeType>Select</c:committeeType></c:committee><c:committee
+      id="65"><c:committeeName>European Legislation Sifting Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="66"><c:committeeName>European Legislation Sub-Committee I</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="67"><c:committeeName>European Legislation Sub-Committee II</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="68"><c:committeeName>European Legislation Sub-Committee on Roads Safety
+      Competence</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="60"><c:committeeName>Environment, Transport &amp; Regional Affairs</c:committeeName><c:subCommittee>Environment
+      Sub-committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="61"><c:committeeName>Environment, Transport &amp; Regional Affairs</c:committeeName><c:subCommittee>Transport
+      Sub-committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="79"><c:committeeName>Foreign Affairs Overseas Development Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="80"><c:committeeName>Foreign Affairs: Entry Clearance Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="71"><c:committeeName>Expenditure: Arts &amp; Home Office Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="72"><c:committeeName>Expenditure: Defence &amp; External Affairs</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="73"><c:committeeName>Expenditure: Environment Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="74"><c:committeeName>Expenditure: General Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="75"><c:committeeName>Expenditure: Social Services &amp; Employment</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="76"><c:committeeName>Expenditure: Trade &amp; Industry Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="87"><c:committeeName>House of Commons (Services): Accomodation &amp; Administration
+      Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="88"><c:committeeName>House of Commons (Services): Computer Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="89"><c:committeeName>House of Commons (Services): Library Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="90"><c:committeeName>House of Commons (Services): New Building Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="91"><c:committeeName>House of Commons: Catering Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="84"><c:committeeName>Home Affairs Sub-Committee</c:committeeName><c:subCommittee/><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="85"><c:committeeName>Home Affairs: Sub-Committee on Race Relations &amp;
+      Immigration</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="113"><c:committeeName>Nationalised Industries: Sub-Committee A</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="114"><c:committeeName>Nationalised Industries: Sub-Committee B</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="115"><c:committeeName>Nationalised Industries: Sub-Committee C</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="116"><c:committeeName>Nationalised Industries: Sub-Committee D</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="117"><c:committeeName>Nationalised Industries: Sub-Committee E</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="104"><c:committeeName>Liaison</c:committeeName><c:subCommittee>Liaison Sub-committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="133"><c:committeeName>Science &amp; Technology: Genetic Engineering Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="134"><c:committeeName>Science &amp; Technology: Technological Innovation
+      Sub-Committee</c:committeeName><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="122"><c:committeeName>Office of the Deputy Prime Minister: Housing, Planning,
+      Local Government and the Regions Committee</c:committeeName><c:subCommittee>Urban
+      Affairs Sub-committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="154"><c:committeeName>Transport, Local Government &amp; the Regions</c:committeeName><c:subCommittee>Transport
+      Sub-committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="160"><c:committeeName>Treasury &amp; Civil Service</c:committeeName><c:subCommittee>Treasury
+      &amp; Civil Service Sub-Committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="156"><c:committeeName>Transport, Local Government and the Regions</c:committeeName><c:subCommittee>Urban
+      Affairs Sub-Committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="157"><c:committeeName>Treasury</c:committeeName><c:subCommittee>Treasury
+      Sub-committee</c:subCommittee><c:committeeType>Sub-Committee</c:committeeType></c:committee><c:committee
+      id="82"><c:committeeName>Health</c:committeeName><c:subCommittee>Maternity Services
+      Sub-Committee</c:subCommittee><c:committeeType>Sub-Committee (Inquiry)</c:committeeType></c:committee><c:committee
+      id="63"><c:committeeName>Environmental Audit</c:committeeName><c:subCommittee>Learning
+      the Sustainability Lesson Sub-Committee</c:subCommittee><c:committeeType>Sub-Committee
+      (Inquiry)</c:committeeType></c:committee><c:committee id="53"><c:committeeName>Environment,
+      Food and Rural Affairs</c:committeeName><c:subCommittee>Disposal of Refrigerators</c:subCommittee><c:committeeType>Sub-Committee
+      (Inquiry)</c:committeeType></c:committee><c:committee id="54"><c:committeeName>Environment,
+      Food and Rural Affairs</c:committeeName><c:subCommittee>Genetically modified
+      organisms</c:subCommittee><c:committeeType>Sub-Committee (Inquiry)</c:committeeType></c:committee><c:committee
+      id="55"><c:committeeName>Environment, Food and Rural Affairs</c:committeeName><c:subCommittee>The
+      Mid-Term Review of the CAP Sub-committee</c:subCommittee><c:committeeType>Sub-Committee
+      (Inquiry)</c:committeeType></c:committee><c:committee id="56"><c:committeeName>Environment,
+      Food and Rural Affairs</c:committeeName><c:subCommittee>The Reform of the Common
+      Fisheries Policy Sub-committee</c:subCommittee><c:committeeType>Sub-Committee
+      (Inquiry)</c:committeeType></c:committee><c:committee id="57"><c:committeeName>Environment,
+      Food and Rural Affairs</c:committeeName><c:subCommittee>Badgers and Bovine Tuberculosis
+      Sub-Committee</c:subCommittee><c:committeeType>Sub-Committee (Inquiry)</c:committeeType></c:committee><c:committee
+      id="58"><c:committeeName>Environment, Food and Rural Affairs</c:committeeName><c:subCommittee>Delivery
+      of Education in Rural Areas Sub-Committee</c:subCommittee><c:committeeType>Sub-Committee
+      (Inquiry)</c:committeeType></c:committee><c:committee id="44"><c:committeeName>Education
+      &amp; Employment</c:committeeName><c:subCommittee>Education Sub-committee</c:subCommittee><c:committeeType>Sub-Committee
+      (Inquiry)</c:committeeType></c:committee><c:committee id="45"><c:committeeName>Education
+      &amp; Employment</c:committeeName><c:subCommittee>Employment Sub-committee</c:subCommittee><c:committeeType>Sub-Committee
+      (Inquiry)</c:committeeType></c:committee><c:committee id="170"><c:committeeName>Communications
+      Committee</c:committeeName><c:subCommittee/><c:committeeType>Investigative Committee</c:committeeType></c:committee><c:committee
+      id="253"><c:committeeName>Science and Technology Committee</c:committeeName><c:subCommittee>Sub-Committee1
+      Higher education in STEM subjects</c:subCommittee><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="243"><c:committeeName>Monetary
+      Policy Committee of the Bank of England</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="175"><c:committeeName>Economic
+      Affairs Committee</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="176"><c:committeeName>European
+      Union Committee</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="177"><c:committeeName>European
+      Union Committee</c:committeeName><c:subCommittee>Sub-Committee A - Economic
+      and Financial Affairs, and International Trade</c:subCommittee><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="178"><c:committeeName>European
+      Union Committee</c:committeeName><c:subCommittee>Sub-Committee B - Internal
+      Market, Energy and Transport</c:subCommittee><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="179"><c:committeeName>European
+      Union Committee</c:committeeName><c:subCommittee>Sub-Committee C - Foreign Affairs,
+      Defence and Development Policy</c:subCommittee><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="180"><c:committeeName>European
+      Union Committee</c:committeeName><c:subCommittee>Sub-Committee D - Agriculture,
+      Fisheries and Environment</c:subCommittee><c:committeeType>Investigative Committee</c:committeeType></c:committee><c:committee
+      id="181"><c:committeeName>European Union Committee</c:committeeName><c:subCommittee>Sub-Committee
+      E - Justice and Institutions</c:subCommittee><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="182"><c:committeeName>European
+      Union Committee</c:committeeName><c:subCommittee>Sub-Committee F - Home Affairs</c:subCommittee><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="183"><c:committeeName>European
+      Union Committee</c:committeeName><c:subCommittee>Sub-Committee G - Social Policies
+      and Consumer Protection</c:subCommittee><c:committeeType>Investigative Committee</c:committeeType></c:committee><c:committee
+      id="208"><c:committeeName>Barnett Formula Committee</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="209"><c:committeeName>BBC
+      Charter Review Committee</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="200"><c:committeeName>Political
+      and Constitutional Reform</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="193"><c:committeeName>Science
+      and Technology Committee</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="194"><c:committeeName>Science
+      and Technology Committee</c:committeeName><c:subCommittee>Sub-Committee I -
+      Behaviour change</c:subCommittee><c:committeeType>Investigative Committee</c:committeeType></c:committee><c:committee
+      id="195"><c:committeeName>Science and Technology Committee</c:committeeName><c:subCommittee>Sub-Committee
+      II - tba</c:subCommittee><c:committeeType>Investigative Committee</c:committeeType></c:committee><c:committee
+      id="212"><c:committeeName>Committee on the Speakership of the House</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="205"><c:committeeName>HIV
+      and AIDS Committee in the United Kingdom</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="247"><c:committeeName>Select
+      Committee on Science and Technology Sub-Committee 2</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="239"><c:committeeName>Committee
+      on Regulators</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="240"><c:committeeName>Committee
+      On Religious Offences</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="241"><c:committeeName>Committee
+      on the Assisted Dying for the terminally ill Bill</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="228"><c:committeeName>EU
+      Select - Freedom, Security and Justice Opt-ins</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="236"><c:committeeName>Committee
+      On Animals In Scientific Procedures</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="237"><c:committeeName>Committee
+      on Chinook ZD 576</c:committeeName><c:subCommittee/><c:committeeType>Investigative
+      Committee</c:committeeType></c:committee><c:committee id="174"><c:committeeName>Ecclesiastical
+      Committee</c:committeeName><c:subCommittee/><c:committeeType>Statutory Committee</c:committeeType></c:committee></committees>'
+    http_version: '1.1'
