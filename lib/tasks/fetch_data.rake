@@ -1,5 +1,5 @@
 namespace :data do
-  desc "Fetch the data"
+  desc "Clear the data from the database"
   task :clear_all => :environment do
     puts "Clearing existing data"
     Member.delete_all
@@ -7,6 +7,7 @@ namespace :data do
     Membership.delete_all
   end
 
+  desc "Fetch the committee data"
   task :fetch_committees => :environment do
     require './lib/committee_fetcher'
     puts "Fetching committees"
@@ -23,13 +24,14 @@ namespace :data do
     end
   end
 
+  desc "Fetch the group data"
   task :fetch_groups => :environment do
     require './lib/group_fetcher'
     puts "Fetching groups"
     Parliament::GroupFetcher.fetch.each do |group|
       puts "=" * 80
       puts group.name
-      organization = Organization.find_or_create_by_name(group.name, :section => "Group")
+      organization = Organization.find_or_create_by_name(group.name, :section => "Group", :url => group.url)
       group.members.each do |name|
         puts name
         m = Member.find_or_create_by_name(name)

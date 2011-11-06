@@ -1,0 +1,7 @@
+%h1 Organizations
+
+%ul
+  - collection.each do |organization|
+    %li
+      = link_to organization.full_name, organization
+

@@ -1,0 +1,6 @@
+%h1 Members
+
+%ul
+  - collection.each do |member|
+    %li= link_to member.name, member
+

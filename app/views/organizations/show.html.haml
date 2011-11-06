@@ -1,0 +1,8 @@
+%h1= resource.full_name
+
+- unless resource.url.blank?
+  %p= link_to "On parliament.uk", resource.url
+
+%ul
+  - resource.members.each do |member|
+    %li= link_to member.name, member

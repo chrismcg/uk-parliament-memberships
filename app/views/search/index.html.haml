@@ -16,14 +16,14 @@
         - if member.committees.size > 0
           %ul
             - member.committees.each do |organization|
-              %li= organization.name
+              %li= link_to organization.full_name, organization
         - else
           %p None
         %h3 Groups
         - if member.groups.size > 0
           %ul
             - member.groups.each do |organization|
-              %li= organization.name
+              %li= link_to organization.full_name, organization
         - else
           %p None
         %hr

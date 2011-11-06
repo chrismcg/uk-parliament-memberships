@@ -1,5 +1,7 @@
 Committee::Application.routes.draw do
   get "search/index"
+  resources "organizations"
+  resources "members"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

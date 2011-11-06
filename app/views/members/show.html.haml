@@ -1,0 +1,5 @@
+%h1= resource.name
+
+%ul
+  - resource.organizations.each do |organization|
+    %li= link_to organization.full_name, organization
