@@ -7,10 +7,12 @@
       = text_field_tag :q, params[:q], :id => 'search_box'
       = submit_tag "Search", :id => 'search'
 
-#results
-  .member
-    %h2 Member
-    %p Alice
-    %h3 Committees
-    %ul
-      %li Internet Committee
+- if @members.size > 0
+  #results
+    - @members.each do |member|
+      .member
+        %h2= member.name
+        %h3 Committees
+        %ul
+          - member.organizations.each do |organization|
+            %li= organization.name
