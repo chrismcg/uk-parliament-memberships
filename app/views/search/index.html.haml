@@ -13,11 +13,17 @@
       .member
         %h2= member.name
         %h3 Committees
-        %ul
-          - member.committees.each do |organization|
-            %li= organization.name
+        - if member.committees.size > 0
+          %ul
+            - member.committees.each do |organization|
+              %li= organization.name
+        - else
+          %p None
         %h3 Groups
-        %ul
-          - member.groups.each do |organization|
-            %li= organization.name
+        - if member.groups.size > 0
+          %ul
+            - member.groups.each do |organization|
+              %li= organization.name
+        - else
+          %p None
         %hr
